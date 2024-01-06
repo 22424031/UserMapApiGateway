@@ -1,0 +1,83 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Ads/GetByAdsIDAsync",
+      "AuthenticationOptions": {
+        "AuthenticationOptionProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7287
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Ads/GetByAdsIDAsync",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/AddAdsAsync",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7287
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AddAdsAsync",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Ads/GetListAsync",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7287
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Ads/GetListAsync",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    //report warning
+    {
+      "DownstreamPathTemplate": "/UserMap/AddReportAsync",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7287
+        }
+      ],
+      "UpstreamPathTemplate": "/UserMap/AddReportAsync",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/UserMap/GetReportListAsync",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7287
+        }
+      ],
+      "UpstreamPathTemplate": "/UserMap/GetReportListAsync",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/UserMap/GetReportByIdAsync",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7287
+        }
+      ],
+      "UpstreamPathTemplate": "/UserMap/GetReportByIdAsync",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+
+  ]
+}

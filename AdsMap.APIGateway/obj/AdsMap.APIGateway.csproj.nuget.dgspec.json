@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\AdsMap.APIGateway\\AdsMap.APIGateway\\AdsMap.APIGateway.csproj": {}
+  },
+  "projects": {
+    "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\AdsMap.APIGateway\\AdsMap.APIGateway\\AdsMap.APIGateway.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\AdsMap.APIGateway\\AdsMap.APIGateway\\AdsMap.APIGateway.csproj",
+        "projectName": "AdsMap.APIGateway",
+        "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\AdsMap.APIGateway\\AdsMap.APIGateway\\AdsMap.APIGateway.csproj",
+        "packagesPath": "C:\\Users\\tru\\.nuget\\packages\\",
+        "outputPath": "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\AdsMap.APIGateway\\AdsMap.APIGateway\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Ocelot": {
+              "target": "Package",
+              "version": "[22.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

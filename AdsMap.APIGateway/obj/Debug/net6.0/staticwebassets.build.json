@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "i5te/Oq0G5m92Nee2f8gCmmaoq9LrJz9LBGLVT/m654=",
+  "Source": "AdsMap.APIGateway",
+  "BasePath": "_content/AdsMap.APIGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

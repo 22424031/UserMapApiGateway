@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AdsMap.APIGateway.props" />
+</Project>

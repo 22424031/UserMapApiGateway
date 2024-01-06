@@ -1,0 +1,47 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Ward/GetListAsync",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8287
+        }
+      ],
+      "UpstreamPathTemplate": "/Ward/GetListAsync",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Ward/ReceiveAds",
+     
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8287
+        }
+      ],
+      "UpstreamPathTemplate": "/Ward/ReceiveAds",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+
+    //{
+    //  "DownstreamPathTemplate": "/Ward/GetByAdsIDabc",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 8287
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/Ward/GetByAdsIDabc",
+    //  "UpstreamHttpMethod": [ "GET" ]
+    //}
+
+
+
+
+  ]
+}

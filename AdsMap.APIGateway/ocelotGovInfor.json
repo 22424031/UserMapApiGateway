@@ -1,0 +1,57 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Gov/GetAdsListAsync",
+      "AuthenticationOptions": {
+        "AuthenticationOptionProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9287
+        }
+      ],
+      "UpstreamPathTemplate": "/Gov/GetAdsListAsync",
+      "UpstreamHttpMethod": [ "GET" ]
+      
+    },
+    {
+      "DownstreamPathTemplate": "/GovInfor/ReceiveAds",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9287
+        }
+      ],
+      "UpstreamPathTemplate": "/GovInfor/ReceiveAds",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/GovInfor/GetByAdsIDAsync",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9287
+        }
+      ],
+      "UpstreamPathTemplate": "/GovInfor/GetByAdsIDAsync",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/GovInfor/UpdateStatus",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9287
+        }
+      ],
+      "UpstreamPathTemplate": "/GovInfor/UpdateStatus",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+  ]
+}
