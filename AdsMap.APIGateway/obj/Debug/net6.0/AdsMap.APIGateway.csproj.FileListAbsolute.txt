@@ -44,3 +44,4 @@ D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\AdsMap.APIGateway\AdsMap.APIGat
 D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\AdsMap.APIGateway\AdsMap.APIGateway\obj\Debug\net6.0\AdsMap.APIGateway.genruntimeconfig.cache
 D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\AdsMap.APIGateway\AdsMap.APIGateway\obj\Debug\net6.0\ref\AdsMap.APIGateway.dll
 D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\AdsMap.APIGateway\AdsMap.APIGateway\bin\Debug\net6.0\ocelot.json
+D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\AdsMap.APIGateway\AdsMap.APIGateway\obj\Debug\net6.0\AdsMap.APIGateway.sourcelink.json

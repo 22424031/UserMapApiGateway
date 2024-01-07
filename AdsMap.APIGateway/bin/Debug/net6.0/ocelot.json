@@ -2,7 +2,7 @@
   "Routes": [
     //Authentication
     {
-      "DownstreamPathTemplate": "/api/GetListAsync",
+      "DownstreamPathTemplate": "/api/authentication/user-profile",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -10,7 +10,7 @@
           "Port": 7124
         }
       ],
-      "UpstreamPathTemplate": "/ward/GetListAsync",
+      "UpstreamPathTemplate": "/api/authentication/user-profile",
       "UpstreamHttpMethod": [ "GET" ]
     },
     {
@@ -25,7 +25,18 @@
       "UpstreamPathTemplate": "/api/authentication/login",
       "UpstreamHttpMethod": [ "POST" ]
     },
-
+    {
+      "DownstreamPathTemplate": "/api/authentication/RegisterUser",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7124
+        }
+      ],
+      "UpstreamPathTemplate": "/api/authentication/RegisterUser",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
     //UserMap
     {
       "DownstreamPathTemplate": "/api/Ads/GetByAdsIDAsync",
@@ -46,7 +57,7 @@
 
     {
       "DownstreamPathTemplate": "/api/Ads/AddAdsAsync",
-    
+
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -162,7 +173,7 @@
     },
     //Ward
     {
-      "DownstreamPathTemplate": "/Ward/GetListAsync",
+      "DownstreamPathTemplate": "/api/Ads/GetListWard",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -170,11 +181,11 @@
           "Port": 8287
         }
       ],
-      "UpstreamPathTemplate": "/Ward/GetListAsync",
+      "UpstreamPathTemplate": "/api/Ads/GetListWard",
       "UpstreamHttpMethod": [ "GET" ]
     },
     {
-      "DownstreamPathTemplate": "/Ward/ReceiveAds",
+      "DownstreamPathTemplate": "/api/Ads/ReceiveAds",
 
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -183,23 +194,59 @@
           "Port": 8287
         }
       ],
-      "UpstreamPathTemplate": "/Ward/ReceiveAds",
+      "UpstreamPathTemplate": "/api/Ads/ReceiveAds",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Ads/UpdateStatus",
+
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8287
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Ads/UpdateStatus",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Ads/PushToGovInfor/{adsId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8287
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Ads/PushToGovInfor/{adsId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Ads/GetByAdsIDWard",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8287
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Ads/GetByAdsIDWard",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    //Ward Report warm
+    {
+      "DownstreamPathTemplate": "/api/ReportWarm/UpdateStatus",
+
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8287
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ReportWarm/UpdateStatus",
       "UpstreamHttpMethod": [ "POST" ]
     }
-
-
-    //{
-    //  "DownstreamPathTemplate": "/Ward/GetByAdsIDabc",
-    //  "DownstreamScheme": "https",
-    //  "DownstreamHostAndPorts": [
-    //    {
-    //      "Host": "localhost",
-    //      "Port": 8287
-    //    }
-    //  ],
-    //  "UpstreamPathTemplate": "/Ward/GetByAdsIDabc",
-    //  "UpstreamHttpMethod": [ "GET" ]
-    //}
-
   ]
 }
